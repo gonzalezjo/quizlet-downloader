@@ -13,4 +13,4 @@ Assertions: Gives programmers a way to test their assumptions during development
 
 ## Building
 
-In your shell of choice, navigate to the directory containing `pom.xml`. Then, using [Maven](https://maven.apache.org/), run the `mvn clean assembly:assembly` command. Maven should automatically download dependencies and produce a jar file in the target directory.
+In your shell of choice, navigate to the directory containing `pom.xml`. Then, using [Maven](https://maven.apache.org/), run the `mvn clean assembly:assembly` command. Maven should automatically download dependencies and produce a jar file in the `target` directory.

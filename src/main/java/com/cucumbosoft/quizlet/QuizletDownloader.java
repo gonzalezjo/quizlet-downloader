@@ -45,9 +45,8 @@ class QuizletDownloader {
                             .attr("class", "word has-audio ")
                             .getElementsByTag("h3")
                             .first()
-                            .text()
-                            .toLowerCase() +
-                        separator +
+                            .text() +
+                            separator +
                         card.attr("class", "text")
                             .attr("class", "definition has-audio ")
                             .getElementsByTag("span")
@@ -55,7 +54,7 @@ class QuizletDownloader {
                             .text() +
                         "\n"
                     )
-                .sorted()
+                .sorted(String.CASE_INSENSITIVE_ORDER)
                 .collect(Collectors.toList())
         );
 

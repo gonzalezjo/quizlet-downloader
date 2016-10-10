@@ -15,9 +15,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * Created on 10/5/2016
- */
 class QuizletDownloader {
     private final HttpClient connection = HttpClientBuilder.create().build();
     private final List<String> words    = new ArrayList<>();

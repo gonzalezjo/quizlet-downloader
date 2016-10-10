@@ -45,7 +45,8 @@ class QuizletDownloader {
                             .attr("class", "word has-audio ")
                             .getElementsByTag("h3")
                             .first()
-                            .text() +
+                            .text()
+                            .toLowerCase() +
                         separator +
                         card.attr("class", "text")
                             .attr("class", "definition has-audio ")
